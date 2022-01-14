@@ -122,7 +122,7 @@ const Header = () => {
                     <Link href="/basic">
                       <a
                         className={
-                          router.pathname == "/basic"
+                          router.pathname == "/order"
                             ? "text-white nav-link"
                             : "text-white nav-link"
                         }
@@ -132,7 +132,7 @@ const Header = () => {
                     </Link>
                   </NavItem>
                   <NavItem>
-                    <Link href="/basic">
+                    <Link href="/location">
                       <a
                         className={
                           router.pathname == "/basic"
