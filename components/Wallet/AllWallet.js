@@ -2,14 +2,15 @@ import React from 'react'
 import WalletHeading from './WalletHeading'
 import WalletTable from './WalletTable'
 import Banner from '../banner/Banner'
-import C2aComponent from '../custom/sections/C2acomponent'
+import FooterComponent from '../custom/sections/FooterComponent'
+
 const AllWallet = () => {
     return (
         <div>
             <Banner/>
             <WalletHeading/>
             <WalletTable/>
-            <C2aComponent/>
+            <FooterComponent/>
         </div>
     )
 }

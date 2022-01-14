@@ -2,18 +2,17 @@ import React from "react";
 
 // core components
 import Banner from "../banner/Banner";
+import FooterComponent from "./sections/FooterComponent";
 
 // sections for this page
 import HeaderComponent from "./sections/headercomponent";
-import C2acomponent from "./sections/c2acomponent";
 
 const CustomComponents = () => {
   return (
     <div>
       <Banner />
       <HeaderComponent />
-      <C2acomponent />
-      
+      <FooterComponent/>
     </div>
   );
 };

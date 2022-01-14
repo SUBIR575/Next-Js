@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../banner/Banner'
-import C2acomponent from '../custom/sections/C2acomponent'
+import FooterComponent from '../custom/sections/FooterComponent'
 import CheckoutAddress from './CheckoutAddress'
 import CheckoutHeading from './CheckoutHeading'
 import CheckoutPayment from './CheckoutPayment'
@@ -14,7 +14,7 @@ const Checkout = () => {
             <CheckoutAddress/>
             <CheckoutTime/>
             <CheckoutPayment/>
-            <C2acomponent/>
+            <FooterComponent/>
         </div>
     )
 }

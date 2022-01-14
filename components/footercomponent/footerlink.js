@@ -1,12 +1,8 @@
-import React from "react";
-import { Row, Col, Container } from "reactstrap";
-import Image from "next/image";
-import img1 from "../../../assets/images/features/android.png";
-import img2 from "../../../assets/images/features/apple.png";
+import React from 'react'
 
-const C2acomponent = () => {
-  return (
-    <div className="call-one">
+const footerlink = () => {
+    return (
+        <div className="call-one">
       <div className="call-two">
         <Container>
           <div className="row">
@@ -37,7 +33,7 @@ const C2acomponent = () => {
         </Container>
       </div>
     </div>
-  );
-};
+    )
+}
 
-export default C2acomponent;
+export default footerlink

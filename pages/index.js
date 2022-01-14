@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>NextJs UI kit | Free UI kit built with bootstrap</title>
+        <title>Karolub</title>
         <meta
           name="description"
-          content="NextJs UI kit | Free UI kit built with bootstrap"
+          content="karoclub"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

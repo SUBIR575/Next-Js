@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../banner/Banner'
-import C2acomponent from '../custom/sections/C2acomponent'
+import FooterComponent from '../custom/sections/FooterComponent'
 import AddressForm from './AddressForm'
 import AddressHeading from './AddressHeading'
 
@@ -10,7 +10,7 @@ const AddressAllComponent = () => {
             <Banner/>
             <AddressHeading/>
             <AddressForm/>
-            <C2acomponent/>
+            <FooterComponent/>
         </div>
     )
 }

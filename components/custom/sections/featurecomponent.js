@@ -1,4 +1,4 @@
-/* eslint-disable */
+
 import React from "react";
 import { Row, Col, Container, Card, CardBody } from "reactstrap";
 import Image from "next/image";
