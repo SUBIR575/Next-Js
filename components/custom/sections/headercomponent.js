@@ -13,7 +13,7 @@ const HeaderComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [city, setCity] = useState([]);
   const [loading, setloading] = useState(true);
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("fd9c1b55-8ac8-4a13-ab61-34338b308915");
   const router = useRouter();
   const toggle = () => setIsOpen(!isOpen);
   useEffect(() => {

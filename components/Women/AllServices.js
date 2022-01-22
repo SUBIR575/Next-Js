@@ -7,6 +7,7 @@ const AllServices = () => {
   const [category,setCategory]= useState()
   const [first, setfirst] = useState(false);
   let id = localStorage.getItem("value");
+  console.log(id)
   useEffect(() => {
     let city = {
       "CityId": id
