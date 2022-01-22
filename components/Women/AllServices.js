@@ -6,11 +6,11 @@ import axios from 'axios';
 const AllServices = () => {
   const [category,setCategory]= useState()
   const [first, setfirst] = useState(false);
-  let id = localStorage.getItem("value");
-  console.log(id)
+  // let id = localStorage.getItem("value");
+  // console.log(id)
   useEffect(() => {
     let city = {
-      "CityId": id
+      "CityId": localStorage.getItem("value"),
     };
     axios
       .post(

@@ -21,11 +21,11 @@ const Service = () => {
   const [category, setCategory] = useState();
   const [first, setfirst] = useState(false);
   const [number, setNumber] = useState(1);
-  let id = localStorage.getItem("value");
-  console.log(id);
+  // let id = localStorage.getItem("value");
+  // console.log(id);
   useEffect(() => {
     let city = {
-      CityId: id,
+      CityId: localStorage.getItem("value"),
     };
     axios
       .post(
