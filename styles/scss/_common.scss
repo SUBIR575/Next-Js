@@ -131,11 +131,16 @@ Main & Page wrapper
 
 .page-wrapper {
   padding-top: 0px;
+  background-image: url(../../assets/images/bg.png)!important;
+  background-repeat: repeat;
+  background-size: 1000px;
+  backdrop-filter: blur(2px)!important;
 }
 
 #main-wrapper {
   overflow: hidden;
 }
+
 
 /******************* 
 container fluid

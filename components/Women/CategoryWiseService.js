@@ -3,6 +3,7 @@ import { Button, Col, Container, Input, Row, Table } from "reactstrap";
 import Image from "next/image";
 const CategoryWiseService = () => {
   const [state, setstate] = useState(1);
+  
   const data = [
     {
       id: 1,
@@ -45,6 +46,10 @@ const CategoryWiseService = () => {
       title: "waxaing",
     },
   ];
+  const handleAddToCart = (id) => {
+    const newProduct = data?.find((pd) => pd.id === id);
+    setCart([...cart, { ...newProduct, quantity: 1 }]);
+  };
   return (
     <div>
       <Container>
@@ -58,12 +63,11 @@ const CategoryWiseService = () => {
                       <tbody style={{ lineHeight: "20px" }}>
                         <td className="tablepadding">
                           
-                            <td style={{ float: "left",padding:'0px'}}>
-                              {i.title}
+                            <td style={{textAlign:'left',padding:'0px',color:'#000'}}>
+                              <span style={{fontSize:'16px',fontWeight:'700'}}>{i.title}</span>
                               <br />
-                              <span style={{ fontWeight: "bold" }}>
-                                {i.rating} {i.time}MIN {i.Price}INR
-                              </span>
+                              <span style={{ fontWeight: "700",fontSize:'16px'}} className="fa fa-star">{i.rating}</span> <span style={{fontSize:'13px'}}>{i.totalrating} ratings</span> <span style={{fontWeight:'700',fontSize:'16px' }}>{i.Price}INR</span> <span style={{fontSize:'13px'}}>{i.time}MIN</span>
+                                  
                             </td>
                           
                         </td>
@@ -72,7 +76,7 @@ const CategoryWiseService = () => {
                             className="cart-num"
                           >
                             <p
-                              className="cart-btn"
+                              className="cart-btn-left"
                               onClick={() => setstate(state + 1)}
                             >
                               +
@@ -83,7 +87,7 @@ const CategoryWiseService = () => {
                               value={state}
                             />
                             <p
-                              className="cart-btn"
+                              className="cart-btn-right"
                               onClick={() => setstate(state - 1)}
                             >
                               -
@@ -91,7 +95,7 @@ const CategoryWiseService = () => {
                           </div>
                         </td>
                         <td className="tablepadding">
-                          <i className="fa fa-shopping-cart" onClick={()=>alert('hello')} style={{color:'#000',backgroundColor:'#838441',padding:'8px',borderRadius:'15px',cursor:'pointer'}}></i>
+                          <i className="fa fa-shopping-cart" onClick={handleAddToCart} style={{color:'#000',backgroundColor:'#838441',padding:'8px',borderRadius:'15px',cursor:'pointer'}}></i>
                         </td>
                       </tbody>
                     </Table>

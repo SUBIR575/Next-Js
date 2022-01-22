@@ -139,6 +139,7 @@ header-text
 .main-card p {
   color: #000;
   margin: 3px;
+  font-weight: 500!important;
 }
 .main-card {
   ul {
@@ -157,7 +158,7 @@ header-text
     color: orange; /* or whatever color you prefer */
   }
   li {
-    color: rgb(150, 147, 147);
+    color: rgb(48, 46, 46);
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -217,22 +218,34 @@ header-text
   line-height: 25px;
 }
 .cart-final-num {
-  border: 1px solid #cdc5c5;
+  border: 0.5px solid #cdc5c5;
   border-radius: 3px;
-  width: 60px;
+  width: 50px;
   background-color: #ffffff;
   text-align: center;
   font-size: 16px;
   color: #000;
   padding: 0px;
 }
-.cart-btn {
+.cart-btn-right {
   width: 40px;
   margin: 0px;
   text-align: center;
   cursor: pointer;
   background-color: #838441;
   color: #ffffff;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.cart-btn-left {
+  width: 40px;
+  margin: 0px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #838441;
+  color: #ffffff;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 .leaf {
   margin-top: 20px;
@@ -247,7 +260,9 @@ header-text
   -webkit-box-shadow: 8px 8px 5px 0px rgba(74, 73, 73, 0.75);
   -moz-box-shadow: 8px 8px 5px 0px rgba(74, 73, 73, 0.75);
 }
-
+.home-img{
+  border-radius: 10px;
+}
 /******************
 service type image
 ******************/
