@@ -14,7 +14,7 @@ import {
 } from "reactstrap";
 import CategoryWiseService from "./CategoryWiseService";
 import axios from "axios";
-const Service = (props) => {
+const Service = () => {
   const [state, setstate] = useState(true);
   const [value, setValue] = useState();
   const [modal, setModal] = useState(false);
@@ -93,10 +93,7 @@ const Service = (props) => {
     setstate(false);
     setValue(i);
   };
-  const refs = data.reduce((acc, value) => {
-    acc[value.id] = React.createRef();
-    return acc;
-  }, {});
+  
 
   const handleClick = (id) =>
     refs[id].current.scrollIntoView({
