@@ -40,7 +40,7 @@ const Service = () => {
         console.log(error);
         setfirst(false);
       });
-  }, [id]);
+  }, []);
   const data = [
     {
       id: 1,

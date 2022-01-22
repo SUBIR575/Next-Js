@@ -23,7 +23,7 @@ const AllServices = () => {
         console.log(error);
         setfirst(false)
       });
-  },[id]);
+  },[]);
   console.log("category",category)
     return (
         <div style={{backgroundColor:'#F5F5F5',width:'100%',marginTop:'20px',padding:'20px'}}>
