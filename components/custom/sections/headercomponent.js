@@ -17,9 +17,12 @@ const HeaderComponent = () => {
   const router = useRouter();
   const toggle = () => setIsOpen(!isOpen);
   useEffect(() => {
+    
     axios
       .post(
-        "http://karoclub-001-site1.btempurl.com/api/api/website/City/GetAll"
+        "http://karoclub-001-site1.btempurl.com/api/api/website/City/GetAll",{headers: {
+          'Access-Control-Allow-Origin': '*',
+        }}
       )
       .then((response) => {
         setCity(response.data.Data);
