@@ -21,7 +21,7 @@ const HeaderComponent = () => {
     axios
       .post(
         "http://karoclub-001-site1.btempurl.com/api/api/website/City/GetAll",{headers: {
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': 'http://karoclub-001-site1.btempurl.com',
         }}
       )
       .then((response) => {
