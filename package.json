@@ -2,6 +2,7 @@
   "name": "Karoclub",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://karoclub-001-site1.btempurl.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

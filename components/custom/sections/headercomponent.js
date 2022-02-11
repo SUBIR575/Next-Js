@@ -20,9 +20,7 @@ const HeaderComponent = () => {
     
     axios
       .post(
-        `https://cors-anywhere.herokuapp.com/http://karoclub-001-site1.btempurl.com/api/api/website/City/GetAll`,{headers: {
-          'Access-Control-Allow-Origin': 'http://karoclub-001-site1.btempurl.com',
-        }}
+        "/api/api/website/City/GetAll"
       )
       .then((response) => {
         setCity(response.data.Data);
