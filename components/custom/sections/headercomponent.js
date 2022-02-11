@@ -20,7 +20,7 @@ const HeaderComponent = () => {
     
     axios
       .post(
-        "/api/api/website/City/GetAll"
+        "http://karoclub-001-site1.btempurl.com/api/api/website/City/GetAll"
       )
       .then((response) => {
         setCity(response.data.Data);
